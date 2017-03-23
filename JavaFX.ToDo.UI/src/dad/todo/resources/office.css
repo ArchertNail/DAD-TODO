@@ -1,0 +1,96 @@
+
+/*LOGIN */
+#loginBorderPane{
+	-fx-background-color: linear-gradient(to bottom,  #2949D9, #2EFEC8); 
+}
+
+#tabLogin .tab-header-background{
+	-fx-background-color: "#414040"
+}
+
+#olvidarContrasenia{
+	-fx-text-fill: black;
+}
+
+.textFieldLogin{
+	-fx-text-fill: white;
+	-fx-prompt-text-fill: black;
+	-fx-focus-color:white;
+	-fx-background-color:TRANSPARENT;
+}
+
+
+/* -------- ESTILOS GENERALES --------- */
+
+/*Estilos generales */
+
+.titulosGenerales{
+	-fx-text-fill: "#2949D9";
+}
+.botonesGenerales{
+	-fx-background-color: "#2949D9";
+	-fx-text-fill: white;
+	-fx-font-size:14px;
+	-fx-font-weight: bold;
+}
+.tabPane{
+	-fx-background-color: white;
+}
+
+.textFieldGeneral{
+
+	-fx-background-color:TRANSPARENT;
+}
+
+
+/* -------------- EVENTOS -------------------------*/
+
+/* Menu */
+#menuPrincipal{
+	-fx-background-color: linear-gradient(to bottom,  #2949D9, #2EFEC8); 
+}
+
+.nombreUserMenu{
+	-fx-text-fill: white;
+}
+
+.botonesMenu{
+	-fx-text-fill: white;
+}
+
+.botonMenuSelect{
+	-fx-background-color: "#414040";
+	-fx-text-fill: white;
+}
+
+.borderPane{
+	-fx-background-color: white;
+}
+/* Tabla eventos */
+
+#tablaEventos .column-header{
+	-fx-background-color: white;
+	-fx-border-color: "#414040";
+	-fx-border-width:0px 1px 2px 0px;
+}
+
+#tablaEventos .column-header .label{
+	-fx-text-fill: "#2949D9";
+}
+
+.table-row-cell:selected {
+    -fx-background-color: "#378bcf";  
+}
+
+/* Modificar Evento */
+
+#tituloModificarEvento{
+	-fx-text-fill: #2949D9;
+}
+
+/*Admin */
+.radioButtons{
+	-fx-selected-color: #2949D9;
+    -fx-unselected-color: #2949D9;
+
+}

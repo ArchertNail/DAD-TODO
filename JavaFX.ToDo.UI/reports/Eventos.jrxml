@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-03-07T12:32:43 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Eventos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d6d65a4-c53d-483c-a08d-d48330faf801">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Eventos Data"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="456"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="530"/>
+	<subDataset name="Dataset1" uuid="08e4ff82-2e66-43d5-9cd6-56ef161804bc">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Eventos Data"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="d1903933-5e43-43e8-815a-06f363f4a04a">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Eventos Data"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="Usuario" class="java.lang.String"/>
+	<parameter name="FechaInforme" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.util.Date">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<field name="latitud" class="java.lang.Double">
+		<fieldDescription><![CDATA[latitud]]></fieldDescription>
+	</field>
+	<field name="longitud" class="java.lang.Double">
+		<fieldDescription><![CDATA[longitud]]></fieldDescription>
+	</field>
+	<field name="realizado" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[realizado]]></fieldDescription>
+	</field>
+	<field name="lugar" class="java.lang.String">
+		<fieldDescription><![CDATA[lugar]]></fieldDescription>
+	</field>
+	<field name="duracion" class="java.lang.Long">
+		<fieldDescription><![CDATA[duracion]]></fieldDescription>
+	</field>
+	<field name="titulo" class="java.lang.String">
+		<fieldDescription><![CDATA[titulo]]></fieldDescription>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[usuario]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="0" width="220" height="50" uuid="ac7ea639-4faa-4091-b135-fca3bb811cdb"/>
+				<box bottomPadding="1">
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="20"/>
+				</textElement>
+				<text><![CDATA[Eventos]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="40" width="150" height="30" uuid="f5b59ce2-4e7b-45ac-a4ae-74d89b1f2bf8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="0c4ed5fd-f77f-4aa5-9ea6-999e9a60b457"/>
+				<textFieldExpression><![CDATA[$P{FechaInforme}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="66">
+			<staticText>
+				<reportElement x="40" y="20" width="100" height="30" uuid="8104f8f7-af13-4c04-b993-1d4088520cee"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="16"/>
+				</textElement>
+				<text><![CDATA[Titulo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="18" width="100" height="30" uuid="d5f5d4dc-b33a-4b9d-bfba-10a252aea2a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="20" width="100" height="30" uuid="52b906a7-d5e9-4eb2-9111-8bd8a1d366c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Realizado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="210" y="10" width="100" height="30" uuid="a4092aef-424f-4435-aba1-fd0498b8c4a1"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="10" width="100" height="30" uuid="69b6dca1-817a-4f7e-b64f-79acc42bc8bc"/>
+				<textFieldExpression><![CDATA[$F{titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="10" width="100" height="30" uuid="ee4f688a-66ce-425e-9547-f148e5622d13"/>
+				<textFieldExpression><![CDATA[$F{realizado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
