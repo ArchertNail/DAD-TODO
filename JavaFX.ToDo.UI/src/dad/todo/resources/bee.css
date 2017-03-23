@@ -1,0 +1,148 @@
+
+/*LOGIN */
+#loginBorderPane{
+	-fx-background-color: linear-gradient(to bottom,  #FFFC00, #151515); 
+}
+
+#tabLogin .tab-header-background{
+	-fx-background-color: "#414040";
+}
+
+#olvidarContrasenia{
+	-fx-text-fill:white;
+}
+
+#recordarCheck{
+	-fx-text-fill:white;
+}
+
+.textFieldLogin{
+	-fx-text-fill:black;
+	-fx-prompt-text-fill: white;
+	-fx-focus-color:white;
+	-fx-background-color:TRANSPARENT;
+}
+
+/*-------------ESTILOS GENERALES--------------*/
+
+.titulosGenerales{
+	-fx-text-fill: #FFFC00;
+}
+.botonesGenerales{
+	-fx-background-color: yellow;
+	-fx-text-fill: black;
+	-fx-border-radius: 2px;
+	-fx-border-color: black;
+	-fx-font-size:14px;
+	-fx-font-weight: bold;
+}
+.separadores{
+	-fx-background-color: white;
+}
+.tabPane{
+	-fx-background-color: #414040;
+}
+.borderPane{
+	-fx-background-color: #414040;
+}
+.textFieldGeneral{
+	-fx-text-fill:white;
+	-fx-prompt-text-fill: yellow;
+	-fx-focus-color:yellow;
+	-fx-unfocus-color:yellow;
+	-fx-background-color:TRANSPARENT;
+}
+.calendarios{
+	-fx-default-color:yellow;
+
+}
+.calendarios .text-field {
+    -fx-text-fill:white;
+}
+
+.labelRandom{
+	-fx-text-fill:#FFFC00;
+}
+
+/* -------------- EVENTOS -------------------------*/
+
+/* Menu */
+#menuPrincipal{
+	-fx-background-color: linear-gradient(to bottom,  #FFFC00, #151515); 
+}
+
+.nombreUserMenu{
+	-fx-text-fill: black;
+}
+
+.botonesMenu{
+	-fx-text-fill: white;
+}
+
+.botonMenuSelect{
+	-fx-background-color: #414040;
+	-fx-text-fill: white;
+}
+
+.checkBoxGeneral{
+	-fx-text-fill:#FFFC00;
+}
+
+/* Tabla eventos */
+
+#tablaEventos{
+	-fx-background-color: #414040;
+}
+
+#tablaEventos .column-header{
+	-fx-background-color: #414040;
+	-fx-border-color: #FFFC00;
+	-fx-border-width:0px 1px 2px 0px;
+}
+
+#tablaEventos .column-header .label{
+	-fx-text-fill: #FFFC00;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #FFFC00;  
+}
+
+.table-row-cell:selected .text {
+       -fx-fill: black !important;
+       
+       }
+.table-view .table-cell .text{
+    -fx-fill: white;
+}
+
+
+
+/* Modificar Evento */
+
+#tituloModificarEvento{
+	-fx-text-fill: #FFFC00;
+}
+
+.labelModificarEvento{
+	-fx-text-fill: #FFFC00;
+}
+
+.separatorModificar{
+	-fx-background-color: #FFFC00;
+}
+
+/* Admin */
+
+.radioButtons{
+    -fx-text-fill: white;
+    -fx-selected-color: yellow;
+    -fx-unselected-color: yellow;
+}
+
